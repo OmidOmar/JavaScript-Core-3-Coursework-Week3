@@ -70,3 +70,19 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+hogwarts.filter((x) => {
+  if (x.house === "Gryffindor") {
+    let { firstName, lastName } = x;
+    console.log(firstName + " " + lastName);
+  }
+});
+
+console.log("--------------------------------------");
+
+hogwarts.filter((x) => {
+  if (x.occupation === "Teacher" && x.pet) {
+    let { firstName, lastName } = x;
+    console.log(firstName + " " + lastName);
+  }
+});
