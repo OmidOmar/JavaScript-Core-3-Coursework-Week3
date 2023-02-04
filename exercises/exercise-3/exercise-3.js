@@ -26,3 +26,4 @@ console.log("-".repeat(40));
 let total = 0;
 order.forEach((x) => (total += x.unitPrice * x.quantity));
 console.log(addSpace(27) + "Total: " + total);
+//`
